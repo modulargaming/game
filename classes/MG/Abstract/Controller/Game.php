@@ -4,7 +4,12 @@
 class MG_Abstract_Controller_Game extends Abstract_Controller_Frontend {
 
 	protected $protected = TRUE;
+
+	/**
+	 * @var Model_User_Game
+	 */
 	protected $game;
+
 	protected $game_id;
 	protected $price;
 	protected $max_plays;
@@ -52,7 +57,7 @@ class MG_Abstract_Controller_Game extends Abstract_Controller_Frontend {
 
 	public function play_game($winnings)
 	{
-		if ( !$this->can_play())
+		if ( ! $this->can_play())
 		{
 			return FALSE;
 		}

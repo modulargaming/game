@@ -21,7 +21,7 @@ class MG_Controller_Game_RockPaperScissors extends Abstract_Controller_Game {
 				$post = $this->request->post();
 				if (isset($post['collect']) AND $this->game->winnings)
 				{
-					$this->game->collect_winnings(true);
+					$this->game->collect_winnings(TRUE);
 					Hint::success('You have collected your winnings');
 					$this->redirect(Route::url('games.rock-paper-scissors'));
 				}
@@ -53,7 +53,7 @@ class MG_Controller_Game_RockPaperScissors extends Abstract_Controller_Game {
 			$win = round($game->winnings * $this->win_multiplier + $this->win_points);
 			$game->winnings = $game->winnings + $win;
 		}
-		else if ($choice != $npc)
+		elseif ($choice != $npc)
 		{
 			$this->play_game(0);
 		}
