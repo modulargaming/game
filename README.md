@@ -1,4 +1,6 @@
-game
-====
+# [Modular Gaming Game](http://www.modulargaming.com)
 
-Modular Gaming game module.
+A modular [persistent browser based game](http://www.pbbg.org) framework using [Kohana 3.3](https://github.com/kohana/core) with [ORM](https://github.com/kohana/orm) and [KOstache](https://github.com/zombor/KOstache).
+
+Rock Paper Scissors
+Lucky Wheel
