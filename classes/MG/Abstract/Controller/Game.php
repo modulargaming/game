@@ -1,6 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
-
-
+/**
+ * Abstract Controller for Game
+ *
+ * @package    MG/Game
+ * @category   Controller
+ * @author     Modular Gaming Team
+ * @copyright  (c) 2013 Modular Gaming Team
+ * @license    BSD http://modulargaming.com/license
+ */
 class MG_Abstract_Controller_Game extends Abstract_Controller_Frontend {
 
 	protected $protected = TRUE;

@@ -1,5 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.');
-
+/**
+ * Model for User Game
+ *
+ * @package    MG/Game
+ * @category   Model
+ * @author     Modular Gaming Team
+ * @copyright  (c) 2013 Modular Gaming Team
+ * @license    BSD http://modulargaming.com/license
+ */
 class MG_Model_User_Game extends ORM
 {
 

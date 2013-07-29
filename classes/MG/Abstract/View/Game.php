@@ -1,8 +1,8 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
 /**
- * Abstract base view for Games.
+ * Abstract base view for game.
  *
- * @package    MG Game
+ * @package    MG/Game
  * @category   View
  * @author     Modular Gaming Team
  * @copyright  (c) 2013 Modular Gaming Team
