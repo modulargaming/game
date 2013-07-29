@@ -4,9 +4,9 @@
  *
  * @package    MG/Game
  * @category   View
- * @author     Modular Gaming Team
- * @copyright  (c) 2013 Modular Gaming Team
- * @license    BSD http://modulargaming.com/license
+ * @author     Modular Gaming
+ * @copyright  (c) 2013 Modular Gaming
+ * @license    BSD http://www.modulargaming.com/license
  */
 class MG_Abstract_View_Game extends Abstract_View {
 
