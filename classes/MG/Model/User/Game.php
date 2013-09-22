@@ -45,9 +45,7 @@ class MG_Model_User_Game extends ORM
 
 	public function collect_winnings($play)
 	{
-		$points = Kohana::$config->load('items.points');
-		$initial_points = $points['initial'];
-		$this->user->set_property('points', $this->user->get_property('points', $initial_points) + $this->winnings);
+		$this->user->set_property('points', $this->user->get_property('points') + $this->winnings);
 		$this->user->save();
 		$this->winnings = 0;
 		if ($play)
