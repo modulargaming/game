@@ -53,9 +53,7 @@ class MG_Abstract_Controller_Game extends Abstract_Controller_Frontend {
 
 	public function can_play()
 	{
-		$points = Kohana::$config->load('items.points');
-		$initial_points = $points['initial'];
-		if ($this->user->get_property('points', $initial_points) >= $this->price AND $this->game->can_play($this->max_plays, $this->play_timeout))
+		if ($this->user->get_property('points') >= $this->price AND $this->game->can_play($this->max_plays, $this->play_timeout))
 		{
 			return TRUE;
 		}
@@ -70,9 +68,7 @@ class MG_Abstract_Controller_Game extends Abstract_Controller_Frontend {
 		}
 		if ($this->price)
 		{
-			$points = Kohana::$config->load('items.points');
-			$initial_points = $points['initial'];
-			$this->user->set_property('points', $this->user->get_property('points', $initial_points) - $this->price);
+			$this->user->set_property('points', $this->user->get_property('points') - $this->price);
 		}
 		$this->game->winnings = $winnings;
 		$this->game->plays ++;

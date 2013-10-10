@@ -22,9 +22,7 @@ class MG_Controller_Game_LuckyWheel extends Abstract_Controller_Game {
 		$this->view = new View_Game_LuckyWheel;
 		$can_play = $this->can_play();
 		$this->view->can_play = $can_play;
-		$points = Kohana::$config->load('items.points');
-		$initial_points = $points['initial'];
-		$this->view->has_price = $this->user->get_property('points', $initial_points) >= $this->price;
+		$this->view->has_price = $this->user->get_property('points') >= $this->price;
 		if ($this->request->method() == HTTP_Request::POST)
 		{
 			try
