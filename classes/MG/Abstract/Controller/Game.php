@@ -69,6 +69,7 @@ class MG_Abstract_Controller_Game extends Abstract_Controller_Frontend {
 		if ($this->price)
 		{
 			$this->user->set_property('points', $this->user->get_property('points') - $this->price);
+			$this->user->save();
 		}
 		$this->game->winnings = $winnings;
 		$this->game->plays ++;
